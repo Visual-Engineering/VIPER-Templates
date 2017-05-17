@@ -21,7 +21,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol {
 
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Factory {
+class ___FILEBASENAMEASIDENTIFIER___Assembly {
 
     //MARK: - Configuration
     static func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {

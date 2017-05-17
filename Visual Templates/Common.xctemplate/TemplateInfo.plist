@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MyScene</string>
+	<string>Scene+Commons</string>
 	<key>Description</key>
 	<string>This generates a new common scene file using Visual Engineering&apos;s clean architecture. Your business logic goes here.</string>
 	<key>Kind</key>

@@ -21,13 +21,14 @@ protocol ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol {
 
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Factory {
+class ___FILEBASENAMEASIDENTIFIER___Assembly {
 
     //MARK: - Configuration
-    static func configure(view: ___FILEBASENAMEASIDENTIFIER___View) {
+    static func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+        let router = ___FILEBASENAMEASIDENTIFIER___Router(view: viewController)
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interactor: interactor, view: view)
+        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(router: router, interactor: interactor, view: viewController)
 
-        view.presenter = presenter
+        viewController.presenter = presenter
     }
 }

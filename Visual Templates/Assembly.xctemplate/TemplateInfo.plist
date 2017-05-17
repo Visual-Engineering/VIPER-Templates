@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>
-	<string>This generates a new configurator to connect the view controller, interactor, presenter, and router. You should not need to modify it.</string>
+	<string>This generates a new assembly to connect the view controller, interactor, presenter, and router. You should not need to modify it.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Factory</string>
+			<string>___VARIABLE_sceneName:identifier___Assembly</string>
 			<key>Description</key>
-			<string>The factory name</string>
+			<string>The assembly name</string>
 			<key>Identifier</key>
-			<string>factoryName</string>
+			<string>assemblyName</string>
 			<key>Name</key>
-			<string>Factory Name:</string>
+			<string>Assembly Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -54,6 +54,6 @@
 	<key>SortOrder</key>
 	<string>2</string>
 	<key>Summary</key>
-	<string>This generates a new configurator to connect the view controller, interactor, presenter, and router. You should not need to modify it.</string>
+	<string>This generates a new assembly to connect the view controller, interactor, presenter, and router. You should not need to modify it.</string>
 </dict>
 </plist>
