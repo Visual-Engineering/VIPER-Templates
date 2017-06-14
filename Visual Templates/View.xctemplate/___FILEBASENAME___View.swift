@@ -31,7 +31,6 @@ class ___FILEBASENAMEASIDENTIFIER___View: UIView {
 
     //MARK: - Private API
     private func commonSetup() {
-        ___FILEBASENAMEASIDENTIFIER___Factory.configure(view: self)
         ___FILEBASENAMEASIDENTIFIER___Presenter.viewDidLoad()
     }
 }

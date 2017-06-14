@@ -17,5 +17,11 @@ class ___FILEBASENAMEASIDENTIFIER___Router {
     init(view: ___FILEBASENAMEASIDENTIFIER___ViewController) {
         self.view = view
     }
-    
+}
+
+extension WorkerListRouter: ___FILEBASENAMEASIDENTIFIER___Router {
+
+    func navigateToNextScene() {
+
+    }
 }

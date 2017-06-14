@@ -17,18 +17,25 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {
     //    func retrieveData() -> Task<___FILEBASENAMEASIDENTIFIER___ViewModel>
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol {
+protocol ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol: class {
 
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Assembly {
+protocol ___FILEBASENAMEASIDENTIFIER___RouterProtocol {
+    func navigateToNextScene()
+}
+
+class ___FILEBASENAMEASIDENTIFIER___Builder {
 
     //MARK: - Configuration
-    static func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+    static func build() -> ___FILEBASENAMEASIDENTIFIER___ViewController {
+        let viewController = ___FILEBASENAMEASIDENTIFIER___ViewController()
         let router = ___FILEBASENAMEASIDENTIFIER___Router(view: viewController)
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
         let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(router: router, interactor: interactor, view: viewController)
 
         viewController.presenter = presenter
+
+        return viewController
     }
 }

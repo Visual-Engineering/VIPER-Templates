@@ -11,6 +11,14 @@ import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor {
 
+    //MARK: - Stored properties
+    //    let repository: SceneRepositoryProtocol
+
+    //MARK: - Initializer
+    //    init(repository: SceneRepositoryProtocol = SceneRepository()) {
+    //        self.repository = repository
+    //    }
+
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {

@@ -11,24 +11,25 @@ import Foundation
 class ___FILEBASENAMEASIDENTIFIER___Presenter {
 
     //MARK: - Stored properties
-    fileprivate let router: ___FILEBASENAMEASIDENTIFIER___Router
+    fileprivate let router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol
     fileprivate let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol
-    fileprivate unowned let view: ___FILEBASENAMEASIDENTIFIER___ViewController
+    fileprivate unowned let view: ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol
 
     var state: LoadingState<___FILEBASENAMEASIDENTIFIER___ViewModel> = .loading
 
     var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel? {
-        get {
-            return state.viewModel
-        }
+        didSet {
+            guard let viewModel = viewModel else {
+                state = .error(AppError.unknown)
+                return
+            }
 
-        set {
-            state.viewModel = newValue
+            state = .loaded(viewModel: viewModel)
         }
     }
 
     //MARK: - Initializer
-    init(router: ___FILEBASENAMEASIDENTIFIER___Router, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol, view: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+    init(router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol, view: ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol) {
         self.router = router
         self.interactor = interactor
         self.view = view
