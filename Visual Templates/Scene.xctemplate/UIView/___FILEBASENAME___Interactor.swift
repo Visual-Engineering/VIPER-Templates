@@ -23,7 +23,7 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor {
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {
 
-    //    func retrieveData() -> Task<___FILEBASENAMEASIDENTIFIER___ViewModel> {
+    //    func retrieveData() -> Task<___FILEBASENAMEASIDENTIFIER___Model> {
     //
     //    }
 }

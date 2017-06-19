@@ -43,7 +43,8 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
         //            switch result {
         //            case .failure(let error):
         //                self.state = .error(error)
-        //            case .success(let vm):
+        //            case .success(let model):
+        //                let vm = ___FILEBASENAMEASIDENTIFIER___ViewModel(..)
         //                self.state = .loaded(viewModel: vm)
         //            }
         //        }
