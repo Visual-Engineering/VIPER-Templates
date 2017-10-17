@@ -8,16 +8,16 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Presenter {
+class ___FILEBASENAMEASIDENTIFIER___ {
 
     //MARK: - Stored properties
-    fileprivate let router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol
-    fileprivate let interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol
-    fileprivate unowned let view: ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol
+    fileprivate let router: ___VARIABLE_sceneName:identifier___RouterProtocol
+    fileprivate let interactor: ___VARIABLE_sceneName:identifier___InteractorProtocol
+    fileprivate unowned let view: ___VARIABLE_sceneName:identifier___UserInterfaceProtocol
 
-    var state: LoadingState<___FILEBASENAMEASIDENTIFIER___ViewModel> = .loading
+    var state: LoadingState<___VARIABLE_sceneName:identifier___ViewModel> = .loading
 
-    var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel? {
+    var viewModel: ___VARIABLE_sceneName:identifier___ViewModel? {
         didSet {
             guard let viewModel = viewModel else {
                 state = .error(AppError.unknown)
@@ -29,14 +29,14 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter {
     }
 
     //MARK: - Initializer
-    init(router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol, interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol, view: ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol) {
+    init(router: ___VARIABLE_sceneName:identifier___RouterProtocol, interactor: ___VARIABLE_sceneName:identifier___InteractorProtocol, view: ___VARIABLE_sceneName:identifier___UserInterfaceProtocol) {
         self.router = router
         self.interactor = interactor
         self.view = view
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_sceneName:identifier___PresenterProtocol {
 
     func viewDidLoad() {
         //        let task = interactor.retrieveData().upon(.main) { result in

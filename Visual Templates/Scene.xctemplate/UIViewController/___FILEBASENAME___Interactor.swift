@@ -9,7 +9,7 @@
 import Foundation
 //import Deferred
 
-class ___FILEBASENAMEASIDENTIFIER___Interactor {
+class ___FILEBASENAMEASIDENTIFIER___ {
 
     //MARK: - Stored properties
     //    let repository: SceneRepositoryProtocol
@@ -21,7 +21,7 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor {
 
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
 
     //    func retrieveData() -> Task<___FILEBASENAMEASIDENTIFIER___Model> {
     //

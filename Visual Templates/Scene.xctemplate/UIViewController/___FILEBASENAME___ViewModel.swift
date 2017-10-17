@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct ___FILEBASENAMEASIDENTIFIER___ViewModel {
+struct ___FILEBASENAMEASIDENTIFIER___ {
 
 }

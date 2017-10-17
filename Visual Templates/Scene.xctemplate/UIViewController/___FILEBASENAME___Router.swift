@@ -8,18 +8,18 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Router {
+class ___FILEBASENAMEASIDENTIFIER___ {
 
     //MARK: - Stored properties
-    unowned let view: ___FILEBASENAMEASIDENTIFIER___ViewController
+    unowned let view: ___VARIABLE_sceneName:identifier___ViewController
 
     //MARK: Initializer
-    init(view: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+    init(view: ___VARIABLE_sceneName:identifier___ViewController) {
         self.view = view
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___RouterProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_sceneName:identifier___RouterProtocol {
 
     func navigateToNextScene() {
 

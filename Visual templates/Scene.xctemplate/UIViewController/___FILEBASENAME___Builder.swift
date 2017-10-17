@@ -9,30 +9,30 @@
 import Foundation
 //import Deferred
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
+protocol ___VARIABLE_sceneName:identifier___PresenterProtocol {
     func viewDidLoad()
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol {
+protocol ___VARIABLE_sceneName:identifier___InteractorProtocol {
     //    func retrieveData() -> Task<___FILEBASENAMEASIDENTIFIER___ViewModel>
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol: class {
+protocol ___VARIABLE_sceneName:identifier___UserInterfaceProtocol: class {
 
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___RouterProtocol {
+protocol ___VARIABLE_sceneName:identifier___RouterProtocol {
     func navigateToNextScene()
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Builder {
+class ___VARIABLE_sceneName:identifier___Builder {
 
     //MARK: - Configuration
-    static func build() -> ___FILEBASENAMEASIDENTIFIER___ViewController {
-        let viewController = ___FILEBASENAMEASIDENTIFIER___ViewController()
-        let router = ___FILEBASENAMEASIDENTIFIER___Router(view: viewController)
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(router: router, interactor: interactor, view: viewController)
+    static func build() -> ___VARIABLE_sceneName:identifier___ViewController {
+        let viewController = ___VARIABLE_sceneName:identifier___ViewController()
+        let router = ___VARIABLE_sceneName:identifier___Router(view: viewController)
+        let interactor = ___VARIABLE_sceneName:identifier___Interactor()
+        let presenter = ___VARIABLE_sceneName:identifier___Presenter(router: router, interactor: interactor, view: viewController)
 
         viewController.presenter = presenter
 

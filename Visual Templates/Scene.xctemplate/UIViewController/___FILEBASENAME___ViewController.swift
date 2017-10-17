@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     //MARK: - Stored properties
-    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol!
+    var presenter: ___VARIABLE_sceneName:identifier___PresenterProtocol!
 
     //MARK: - View lifecycle
     override func viewDidLoad() {
@@ -26,6 +26,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     }
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___UserInterfaceProtocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_sceneName:identifier___UserInterfaceProtocol {
     
 }
